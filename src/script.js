@@ -7,7 +7,6 @@ function generatePassword() {
       const randomIndex = Math.floor(Math.random() * charset.length);
       password += charset.charAt(randomIndex);
     }
-  
     document.getElementById("password").value = password;
 }
   
@@ -17,5 +16,5 @@ function copyToClipboard() {
     document.execCommand("copy");
   
     const messageContainer = document.getElementById("message");
-    messageContainer.textContent = "✅ A senha foi copiada para a área de transferência.";
+    messageContainer.textContent = "Copiado para a área de transferência.";
 }
